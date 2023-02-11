@@ -13,8 +13,6 @@ const Lighttheme: ThemeDefinition = {
   colors: {
     primary: "#344767",
     secondary: "#fcfbff",
-    "secondary-darken-1": "#b08be6",
-    "secondary-lighten-1": "#fff",
     accent: "#6386e1",
     content: "#333333",
     background: "#F8F9FA",
@@ -28,17 +26,16 @@ const Lighttheme: ThemeDefinition = {
 const Darktheme: ThemeDefinition = {
   dark: true,
   colors: {
-    primary: "#7295FE",
-    secondary: "#2B2B49",
-    "secondary-darken-1": "#1d1f33",
-    "secondary-lighten-1": "#303052",
-    surface: "#282843",
-    title: "#C3C1D5",
-    content: "#8381a7",
+    primary: "#4EB4F4",
+    secondary: "#219BE8",
+    // surface:toolbar/navigation-drawer/background,
+    surface: "#202225",
+    title: "#e7e3FC",
+    content: "#E7E3FC",
     accent: "#6386e1",
     error: "#e47171",
     info: "#24a6c5",
-    background: "#1d1f33",
+    background: "#36393F",
   },
 };
 

@@ -5,15 +5,22 @@ const router = createRouter({
   routes: [
     {
       path: "/",
-      redirect: "/home",
+      redirect: "/ui",
     },
+    // this page is a sample page for api calling
     {
-      path: "/home",
-      name: "unsplash",
+      path: "/unsplash",
       component: () =>
         import(
           /* webpackChunkName: "app-unsplash" */ "@/views/UnsplashApp.vue"
         ),
+    },
+    // this page is sample page for layout
+    {
+      path: "/ui",
+      name: "ui",
+      component: () =>
+        import(/* webpackChunkName: "app-ui" */ "@/views/UI.vue"),
     },
   ],
 });

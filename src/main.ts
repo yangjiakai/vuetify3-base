@@ -5,11 +5,13 @@ import router from "./router";
 import piniaPersist from "pinia-plugin-persist";
 import vuetify from "./plugins/vuetify";
 import "./styles/main.scss";
+import PerfectScrollbar from "vue3-perfect-scrollbar";
 
 const app = createApp(App);
 const pinia = createPinia();
 
 pinia.use(piniaPersist);
+app.use(PerfectScrollbar);
 app.use(pinia);
 app.use(router);
 app.use(vuetify);

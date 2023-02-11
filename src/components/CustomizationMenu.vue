@@ -9,7 +9,7 @@ interface Color {
 }
 const customizeTheme = useCustomizeThemeStore();
 const theme = useTheme();
-const themeDrawer = ref(true);
+const themeDrawer = ref(false);
 const currentColor = ref<Color>({
   colorId: 2,
   colorName: "grey",
@@ -50,6 +50,7 @@ const primaryColors = ref([
 
 watch(currentColor, (newVal) => {
   theme.themes.value.light.colors.primary = newVal.colorValue;
+  theme.themes.value.dark.colors.primary = newVal.colorValue;
   customizeTheme.setPrimaryColor(newVal);
 });
 </script>
@@ -142,7 +143,7 @@ watch(currentColor, (newVal) => {
         </v-item-group>
       </div>
       <hr class="my-6" />
-      <div class="">
+      <!-- <div class="">
         <b>MiniSideBar</b>
         <v-switch
           color="primary"
@@ -152,12 +153,13 @@ watch(currentColor, (newVal) => {
           :label="`Mini: ${customizeTheme.miniSidebar}`"
         ></v-switch>
       </div>
-      <hr class="my-6" />
+      <hr class="my-6" /> -->
       <div>
         <v-btn color="" class="gradient info" block size="large"
           >Contact Me</v-btn
         >
       </div>
+      <hr class="my-6" />
       <h1 class="text-primary">Primary Color</h1>
       <v-card height="300" color="primary"> </v-card>
     </v-navigation-drawer>
