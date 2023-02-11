@@ -53,7 +53,6 @@ export default createVuetify({
   },
   defaults: {
     VBtn: {
-      color: "primary",
       rounded: "md",
       flat: true,
       fontWeight: "400",
