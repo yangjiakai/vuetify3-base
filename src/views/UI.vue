@@ -6,6 +6,11 @@
 <script setup lang="ts">
 import { useCustomizeThemeStore } from "@/stores/customizeTheme";
 import CustomizationMenu from "@/components/CustomizationMenu.vue";
+import ChangeLanguage from "@/components/ChangeLanguage.vue";
+
+import { useLocale } from "vuetify";
+const { t, current } = useLocale();
+
 const drawer1 = ref(true);
 const drawer2 = ref(false);
 const msg = ref("Hello World!");
@@ -35,7 +40,9 @@ const temp = ref(false);
   <v-navigation-drawer temporary v-model="temp">
     <template v-slot:prepend>
       <v-card height="60" class="d-flex align-center">
-        <v-card-title class="text-primary"> Sub-Navigation </v-card-title>
+        <v-card-title class="text-primary">
+          {{ t("$vuetify.common.subNav") }}</v-card-title
+        >
       </v-card>
     </template>
     <perfect-scrollbar class="scrollnav">
@@ -51,7 +58,9 @@ const temp = ref(false);
     </perfect-scrollbar>
   </v-navigation-drawer>
 
-  <v-app-bar title="Application bar" elevation="1"></v-app-bar>
+  <v-app-bar :title="t('$vuetify.common.applicationBar')" elevation="1">
+    <ChangeLanguage />
+  </v-app-bar>
 
   <v-main>
     <v-sheet height="110vh">
