@@ -4,16 +4,10 @@
 * @Description: 
 -->
 <script setup lang="ts">
-import { useCustomizeThemeStore } from "@/stores/customizeTheme";
 import CustomizationMenu from "@/components/CustomizationMenu.vue";
 import ChangeLanguage from "@/components/ChangeLanguage.vue";
-
 import { useLocale } from "vuetify";
-const { t, current } = useLocale();
-
-const drawer1 = ref(true);
-const drawer2 = ref(false);
-const msg = ref("Hello World!");
+const { t } = useLocale();
 const temp = ref(false);
 </script>
 
@@ -34,7 +28,11 @@ const temp = ref(false);
           text="Sub-Navigation"
         ></v-tooltip>
       </v-list-item>
-      <v-list-item prepend-icon="mdi-forum" value="messages"></v-list-item>
+      <v-list-item
+        prepend-icon="mdi-image"
+        value="unsplash"
+        to="/unsplash"
+      ></v-list-item>
     </v-list>
   </v-navigation-drawer>
   <v-navigation-drawer temporary v-model="temp">
@@ -70,23 +68,6 @@ const temp = ref(false);
 </template>
 
 <style scoped lang="scss">
-.ui-page {
-  height: 100%;
-
-  background: #141e30; /* fallback for old browsers */
-  background: #2193b0; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to bottom,
-    #6dd5ed,
-    #2193b0
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to bottom,
-    #6dd5ed,
-    #2193b0
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
-
 .main {
   height: calc(100vh - 64px);
   overflow: scroll;
