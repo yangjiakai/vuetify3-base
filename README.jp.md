@@ -9,7 +9,7 @@
 <br>
 
 <p align='center'>
-<a href="https://github.com/yangjiakai/jk-vuetify3-lux-admin/blob/main/README.md">English</a> | <a href="https://github.com/yangjiakai/jk-vuetify3-lux-admin/blob/main/README.zh-CN.md">简体中文</a>| <b >日本語</b>
+<a href="https://github.com/yangjiakai/vuetify3-base/blob/main/README.md">English</a> | <a href="https://github.com/yangjiakai/vuetify3-base/blob/main/README.zh-CN.md">简体中文</a>| <b >日本語</b>
 </p>
 
 ## 序文
@@ -53,9 +53,9 @@ Vue2 の j 時代から、Vuetify は私の一番気に入った Vue の UI フ�
 ## 今すぐ試す!
 
 ```
-git clone https://github.com/yangjiakai/jk-vuetify3-lux-admin.git
+git clone https://github.com/yangjiakai/vuetify3-base.git
 
-cd jk-vuetify3-lux-admin
+cd vuetify3-base
 
 npm install
 
