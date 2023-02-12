@@ -47,6 +47,8 @@ npm install
 npm run dev
 ```
 
+## Api requests
+
 > regarding API requests, my example uses the unsplash API.
 >
 > You need to go to the unsplash developer platform and apply for your own `ACCESS_KEY`.
