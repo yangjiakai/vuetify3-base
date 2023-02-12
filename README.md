@@ -9,7 +9,7 @@
 <br>
 
 <p align='center'>
-<b>English</b> | <a href="https://github.com/yangjiakai/vuetify3-base/blob/main/README.zh-CN.md">简体中文</a>| <a href="https://github.com/yangjiakai/vuetify3-base/blob/main/README.jp.md">日本語</a>
+<b>English</b> | <a href="https://github.com/yangjiakai/vuetify3-base/blob/master/README.zh-CN.md">简体中文</a>| <a href="https://github.com/yangjiakai/vuetify3-base/blob/master/README.jp.md">日本語</a>
 </p>
 
 ## Introduction
