@@ -4,20 +4,29 @@
 * @Description: 
 -->
 <script setup lang="ts">
-import { Icon } from "@iconify/vue";
+import ChangeLanguage from "@/components/ChangeLanguage.vue";
+import { useCustomizeThemeStore } from "@/stores/customizeTheme";
+const customizeTheme = useCustomizeThemeStore();
 </script>
 
 <template>
   <v-app-bar elevation="1">
     <template v-slot:prepend>
-      <Icon class="mx-3" width="30" icon="logos:bubble-icon" />
-    </template>
-    <v-toolbar-title>Unsplash</v-toolbar-title>
-    <template v-slot:append>
-      <v-btn icon="mdi-dots-vertical"></v-btn>
+      <transition>
+        <v-icon
+          v-if="customizeTheme.subSidebar"
+          @click="customizeTheme.subSidebar = !customizeTheme.subSidebar"
+          >mdi-menu-open</v-icon
+        >
+        <v-icon
+          v-else-if="!customizeTheme.subSidebar"
+          @click="customizeTheme.subSidebar = !customizeTheme.subSidebar"
+          >mdi-menu</v-icon
+        >
+      </transition>
     </template>
 
-    <v-spacer></v-spacer>
+    <ChangeLanguage />
   </v-app-bar>
 </template>
 
