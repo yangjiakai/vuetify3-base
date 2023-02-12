@@ -4,11 +4,8 @@
   "private": true,
   "scripts": {
     "dev": "vite",
-    "build": "run-p type-check build-only",
-    "preview": "vite preview",
-    "test:unit": "vitest --environment jsdom --root src/",
-    "build-only": "vite build",
-    "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore"
+    "build": "vite build",
+    "preview": "vite preview"
   },
   "dependencies": {
     "@mdi/font": "^7.1.96",
