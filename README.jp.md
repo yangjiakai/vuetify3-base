@@ -3,7 +3,7 @@
 </p>
 
 <h6 align='center'>
-<a href="https://shirabako.com/">ライブ・デモ</a>
+<a href="https://marvelous-sunflower-cb8d70.netlify.app/">ライブ・デモ</a>
 </h6>
 
 <br>
@@ -14,7 +14,7 @@
 
 ## 序文
 
-Vue2 の j 時代から、Vuetify は私の一番気に入った Vue の UI フレームワークです。2020 年末に Vue 3.0 がリリースされ、2022 年初に Vue 3.2 バージョン安定して、その後 2 年、2022 年 11 月にようやく Vue3.x 用の Vuetify3 が安定になりました、Vue の作者であるヴァン・ヨー (Evan You)も Vuetify3 への支持を表明しています。現段階では、Vuetify3 のドキュメントは Vuetify2 からほとんど更新されておらず、多言語版もまだ手が届いていません。この状態では、Vuetify を初めて使う開発者や、Vuetify3 を早く導入したい開発者は、最初に混乱するでしょう。一方で、フロントエンドや Vuetify フレームワークの知識を見直したいと思っています。その一方で、自分の経験を通じて他の開発者の方々の役に立てればと思っているので、2022 年 11 月の Vuetify3 の正式リリース開始と同時に、このプロジェクトを開始しました。フロントエンドの UI デザイン、適応、コンポーネント開発、一般的なプラグインとの連携、シンプルなロジックが中心になる予定です。対応する API やビジネスロジックの開発はまだ決まっていません（余裕があるかどうかはこれからです）。
+これは、vuetify3 + composition api を使用して、一般的な機能やプラグインを統合した開発テンプレートです。このテンプレートを基に、今後の vuetify3 アプリの開発ができます。
 
 ## 特徴
 
@@ -22,33 +22,19 @@ Vue2 の j 時代から、Vuetify は私の一番気に入った Vue の UI フ�
 - ⚡️ [Vite](https://github.com/vitejs/vite)
 - ⚡️ UI Framework [Vuetify 3](https://next.vuetifyjs.com/en/)
 - ⚡️ TypeScript
-- 📦 Component Auto Importing
-- 🍍 [Pinia](https://pinia.vuejs.org/)
-- ⚡️ `<script setup>`
-- ⚡️ Use icons from any icon sets in [Iconify](https://icon-sets.iconify.design/)
-- ☁️ Deploy on Netlify, zero-config
-- ☁️ Responsive multi-platform adaptive
+- 📦 コンポーネント　自動的にインポート
+- 🍍 [Pinia](https://pinia.vuejs.org/)で State 管理
+- 🍍 pinia-plugin-persist State の永続性
+- ⚡️ 新しい `<script setup>` 文法の使用
+- ⚡️ 任意のアイコンセット [Iconify](https://icon-sets.iconify.design/)
+- ⚡️ Netlify でのゼロ設定部署
+- ⚡️ 18n 多言語切り替え
+- ⚡️ dark light モード切り替え
+- ⚡️ 主題色切り替え
+- ⚡️ vue3-perfect-scrollbar スクロールバーの美化
+- ☁️ レスポンシブで多プラットフォームに適応
 
 <br>
-
-## プリパック
-
-### UI Frameworks
-
-- [Vuetify3](https://next.vuetifyjs.com/en/) - Vuetify は、美しく手作りされた Vue コンポーネントで構成された、デザインスキル不要の UI フレームワークです。
-
-### Icons
-
-- [Iconify](https://iconify.design) - 任意のアイコンセットを使用 [🔍Icônes](https://icones.netlify.app/)
-- [Pure CSS Icons via UnoCSS](https://github.com/antfu/unocss/tree/main/packages/preset-icons)
-
-### プラグイン
-
-- [Vue Router4](https://router.vuejs.org/)
-- [VueUse](https://github.com/antfu/vueuse) - 便利なコンポジション API 集
-- [VuedDaggable](https://github.com/SortableJS/Vue.Draggable) - 配列モデルと同期したドラッグ＆ドロップによる配置操作が可能
-- [Vue-Masonry-Wall](https://github.com/DerYeger/yeger/tree/main/packages/vue-masonry-wall) -Vue 3 のレスポンシブな Masonry レイアウト SSR をサポートしています
-- [Vue-Virtual-Scroller](https://github.com/Akryum/vue-virtual-scroller) - 超高速の任意のデータ量のスクロール
 
 ## 今すぐ試す!
 
@@ -61,3 +47,15 @@ npm install
 
 npm run dev
 ```
+
+## api 请求
+
+> API リクエストに関して、私の示例では Unsplash の API を使用しました。
+>
+> 自分自身の`ACCESS_KEY`を申請するために、Unsplash 開発者プラットフォームに行く必要があります。
+>
+> https://unsplash.com/oauth/applications
+>
+> 次に、ローカルに新しい`.env.local` ファイルを作成します
+>
+> `VITE_UNSPLASH_ACCESS_KEY = 自分のAccess Key`を追加します。

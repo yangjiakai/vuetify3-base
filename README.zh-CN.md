@@ -14,7 +14,7 @@
 
 ## 序文
 
-使用 vuetify3+组合式 api,整合常用功能插件的开服模板,之后的 vuetify3 app 都可以基于这个模板
+这是一个使用 vuetify3 + 组合式 api,整合了常用功能和插件的开发模板,之后的 vuetify3 app 都可以基于这个模板进行开发
 
 ## 特性
 
@@ -28,7 +28,7 @@
 - ⚡️ 使用新的 `<script setup>` 语法
 - ⚡️ 使用任意的图标集 [Iconify](https://icon-sets.iconify.design/)
 - ⚡️ 零配置部署在 Netlify
-- ⚡️ 多语言切换
+- ⚡️ i18n 多语言切换
 - ⚡️ dark light 模式切换
 - ⚡️ 主题色切换
 - ⚡️ vue3-perfect-scrollbar 滚动条美化

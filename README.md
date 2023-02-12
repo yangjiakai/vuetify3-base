@@ -3,7 +3,7 @@
 </p>
 
 <h6 align='center'>
-<a href="https://shirabako.com/">Live Demo</a>
+<a href="https://marvelous-sunflower-cb8d70.netlify.app/">Live Demo</a>
 </h6>
 
 <br>
@@ -14,7 +14,7 @@
 
 ## Introduction
 
-Since the era of Vue2, Vuetify has been one of my favorite UI frameworks for Vue. With the release of Vue 3.0 at the end of 2020 and the gradual stability of Vue 3.2 in early 2022, Vuetify has finally stabilized. Two years later, in November 2022, Vuetify3 for Vue3.x finally went live, and Vue creator Evan You also expressed support for Vuetify3. At this stage, the documentation for Vuetify3 is still largely unchanged from Vuetify2, and the multilingual version is still out of reach. In this situation, developers who are new to Vuetify or want to embrace Vuetify3 as soon as possible will be confused at first. On the one hand, I want to review my knowledge of the front-end and the Vuetify framework. On the other hand, I also hope to be able to help other developers through my own exploration, so I plan to start this project at the same time as the official launch of Vuetify3 in November 2022. The focus is expected to be on front-end UI design, responsive design, component development, integration with common plugins, and simple logic. It is still uncertain whether to develop corresponding APIs and
+This is a development template that integrates frequently used features and plugins using vuetify3 + composite APIs. Future vuetify3 apps can be developed based on this template.
 
 ## Features
 
@@ -24,35 +24,21 @@ Since the era of Vue2, Vuetify has been one of my favorite UI frameworks for Vue
 - ⚡️ TypeScript
 - 📦 Component Auto Importing
 - 🍍 [Pinia](https://pinia.vuejs.org/)
+- 🍍 pinia-plugin-persist for state persisting
 - ⚡️ `<script setup>`
 - ⚡️ Use icons from any icon sets in [Iconify](https://icon-sets.iconify.design/)
 - ☁️ Deploy on Netlify, zero-config
 - ☁️ Responsive multi-platform adaptive
-
-<br>
-## Pre-packed
-
-### UI Frameworks
-
-- [Vuetify3](https://next.vuetifyjs.com/en/) - Vuetify is a no design skills required UI Framework with beautifully handcrafted Vue Components.
-
-### Icons
-
-- [Iconify](https://iconify.design) - use icons from any icon sets [🔍Icônes](https://icones.netlify.app/)
-- [Pure CSS Icons via UnoCSS](https://github.com/antfu/unocss/tree/main/packages/preset-icons)
-
-### Plugins
-
-- [Vue Router4](https://router.vuejs.org/)
-- [VueUse](https://github.com/antfu/vueuse) - collection of useful composition APIs
-- [VuedDaggable](https://github.com/SortableJS/Vue.Draggable) - allowing drag-and-drop and synchronization with view model array.
-- [Vue-Masonry-Wall](https://github.com/DerYeger/yeger/tree/main/packages/vue-masonry-wall) - Responsive masonry layout with SSR support and zero dependencies for Vue 3.
-- [Vue-Virtual-Scroller](https://github.com/Akryum/vue-virtual-scroller) - Blazing fast scrolling of any amount of data
+- ⚡️ Internationalization (i18n)
+- ⚡️ Dark Light mode
+- ⚡️ Themecolor change
+- ⚡️ Vue3-perfect-scrollbar
+  <br>
 
 ## Try it now!
 
 ```
-git clone https://github.com/yangjiakai/vuetify3-base.git
+https://github.com/yangjiakai/vuetify3-base.git
 
 cd vuetify3-base
 
@@ -60,3 +46,13 @@ npm install
 
 npm run dev
 ```
+
+> regarding API requests, my example uses the unsplash API.
+>
+> You need to go to the unsplash developer platform and apply for your own `ACCESS_KEY`.
+>
+> https://unsplash.com/oauth/applications
+>
+> Then, create a new `.env.local` file locally.
+>
+> Add `VITE_UNSPLASH_ACCESS_KEY = your own Access Key`
